@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: #ebeaea;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+nav ul li .active {
+  color: orangered;
+}
+
+.nav-left {
+  flex: 50%;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+}
+
+.nav-right a {
+  background-color: orangered;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Blog Form */
+.blog-form {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-form .form-container {
+  width: 500px;
+}
+
+.blog-form .form-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-form form label {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.blog-form form input,
+textarea,
+select {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+.blog-form form textarea {
+  height: 250px;
+}
+
+.blog-form form .input-blog-image-group {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.blog-form form .input-blog-image-group label p {
+  font-size: 15px;
+}
+
+.blog-form form .input-blog-image-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-form form .button-group {
+  text-align: right;
+}
+
+.blog-form form button {
+  margin-top: 50px;
+  padding: 8px 20px;
+  font-size: 17px;
+  background: #ec4d37;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.blog hr {
+  border: 1px solid #dbdbdb;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Blog list */
+.blog .blog-list {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog-list-item {
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #dbdbdb;
+  border-radius: 8px;
+  display: flex;
+}
+
+.blog-list-item .blog-image {
+  flex: 1;
+}
+
+.blog-list-item .blog-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.blog-list-item .blog-content {
+  padding-left: 20px;
+  flex: 2;
+}
+
+.btn-group {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.btn-group .btn-edit {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: #dbdbdb;
+}
+
+.btn-group .btn-post {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: #ec4d37;
+  color: #fff;
+}
+
+.blog .blog-list h1 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.blog .blog-list .detail-blog-content {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.blog .blog-list .blog-list-item p {
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+/* Blog Detail */
+.blog-detail {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-detail-container {
+  width: 80%;
+  margin: 40px 0;
+}
+
+.blog-detail-container img {
+  width: 100%;
+}
+
+.blog-detail-container h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 120%;
+  margin-bottom: 15px;
+}
+
+.blog-detail-container .author {
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.blog-detail-container p {
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: justify;
+}
+
+/* Checkbox */
+.checkbox {
+  display: flex;
+  margin-top: 10px;
+  padding-right: 30px;
+}
+
+.checkcheck .checkbox {
+  width: 50%;
+  display: block;
+  padding-right: 30px;
+}
+
+.checkcheck {
+  padding-right: 30px;
+}
+
+.checkcheck .checkbox label {
+  display: flex;
+  width: 50%;
+  padding-right: 30px;
+}
+
+.checkcheck .checkbox label input {
+  display: block;
+  background-color: aqua;
+  padding-right: 30px;
+}
+
+nav {
+  background-color: rgb(203, 202, 202);
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+}
+
+.right {
+  background-color: rgb(203, 202, 202);
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.left ul {
+  display: flex;
+  align-items: center;
+}
+
+.left ul li {
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+.left ul li a {
+  text-decoration: none;
+  color: rgb(205, 7, 7);
+  font-weight: 900;
+  font-size: larger;
+}
+
+.right button {
+  padding: 10px 20px;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+}
+
+.right button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.logo {
+  width: 40px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.logo:hover {
+  width: 70px;
+  transition: 0.5s;
+}
+
+body {
+  background-color: rgb(234, 234, 234);
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+.page-style {
+  padding-bottom: 50px;
+}
+
+.title {
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 45px;
+}
+
+.container {
+  padding-bottom: 50px;
+  display: flex;
+  margin-left: 400px;
+}
+
+.project-image {
+  width: 40%;
+  height: 20%;
+  display: block;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.detail {
+  margin: 30px 50px;
+}
+
+.duration {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 300px;
+}
+
+.flex-icon {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 300px;
+}
+
+.flex-icon img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.flex-icon p {
+  margin: auto;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.technology {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 300px;
+}
+
+.flex-check {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+  margin-left: 100px;
+  font-size: 40px;
+}
+
+.flex-check .flex-box {
+  display: flex;
+  margin-right: 30%;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+.flex-check .flex-box label {
+  justify-content: center;
+  display: flex;
+  width: 50%;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.flex-check .flex-box img {
+  display: flex;
+  width: 8%;
+  padding-right: 8%;
+}
+
+.description {
+  width: 79%;
+  text-align: justify;
+  margin-left: 100px;
+}
