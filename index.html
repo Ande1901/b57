@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" a href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
     <title>Web saya</title>
   </head>
   <body style="background-image: url('/foto/imagesses.jpg')">
@@ -12,32 +17,90 @@
         <ul>
           <img class="logo" src="assets/foto/dwdwd.png" alt="logo-img" />
           <li><a class="collapse" href="index.html">Home</a></li>
-          <li><a class="collapse" href="Blog.html">Blog</a></li>
+          <li><a class="collapse" href="./Blog.html">Blog</a></li>
+          <li>
+            <a class="collapse" href="./testimonal.html">Testimonial</a>
+          </li>
         </ul>
       </div>
       <div class="right">
         <button><a class="collapse" href="contact.html">Contact me</a></button>
       </div>
+      <div>
+        <button class="icon" onclick="toggleHamburger()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </nav>
-    <div class="border">
-      <div class="card">
-        <img src="assets/foto/ande.jpeg" alt="Avatar" style="width: 100%" />
-        <div class="container">
-          <h2><b>Ande franata</b></h2>
-          <p>i wiil become a hokage one day!</p>
+    <div id="hamburger-container" class="hamburger-container hamburger-hide">
+      <a href="./index.html">Home</a>
+      <a href="./Blog.html" class="hamburger-active">Blog</a>
+      <a href="./contact.html">Contact Me</a>
+    </div>
+    <div class="cinta">
+      <div class="border">
+        <div class="card">
+          <img src="assets/foto/ande.jpeg" alt="Avatar" style="width: 100%" />
+          <div class="container">
+            <h2><b>Ande franata</b></h2>
+            <p>i wiil become a hokage one day!</p>
 
-          <table border="1" style="width: 100%">
-            <tr>
-              <th>experience</th>
-              <th>year</th>
-            </tr>
-            <tr>
-              <th>develop personal website</th>
-              <th>2024</th>
-            </tr>
-          </table>
+            <table border="1" style="width: 100%">
+              <tr>
+                <th>experience</th>
+                <th>year</th>
+              </tr>
+              <tr>
+                <th>develop personal website</th>
+                <th>2024</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="div-baru">
+        <div class="containerr">
+          <h1>What I Do</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            minus consequatur tenetur atque vel a sint quas consequuntur facere
+            laboriosam possimus rem cupiditate reprehenderit, mollitia id
+            eligendi impedit dolore autem.
+          </p>
+        </div>
+        <div class="skill">
+          <div>
+            <i class="fa-brands fa-js" style="font-size: 30px"></i>
+            <h2>Javascript</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ea!
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-github" style="font-size: 30px"></i>
+            <h2>Github</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ea!
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-gear" style="font-size: 30px"></i>
+            <h2>Deployment</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ea!
+            </p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <h2>Found Me on</h2>
+          <i class="fa-brands fa-facebook" style="font-size: 30px"></i>
+          <i class="fa-brands fa-twitter" style="font-size: 30px"></i>
+          <i class="fa-brands fa-instagram" style="font-size: 30px"></i>
         </div>
       </div>
     </div>
+    <script src="assets/js/nav.js"></script>
   </body>
 </html>

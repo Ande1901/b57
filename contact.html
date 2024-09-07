@@ -12,13 +12,26 @@
         <ul>
           <img class="logo" src="assets/foto/dwdwd.png" alt="logo-img" />
           <li><a class="collapse" href="index.html">Home</a></li>
-          <li><a class="collapse" href="/Blog">Blog</a></li>
+          <li><a class="collapse" href="./Blog.html">Blog</a></li>
+          <li>
+            <a class="collapse" href="./testimonal.html">Testimonial</a>
+          </li>
         </ul>
       </div>
       <div class="right">
         <button><a class="collapse" href="contact.html">Contact me</a></button>
       </div>
+      <div>
+        <button class="icon" onclick="toggleHamburger()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </nav>
+    <div id="hamburger-container" class="hamburger-container hamburger-hide">
+      <a href="./index.html">Home</a>
+      <a href="./Blog.html" class="hamburger-active">Blog</a>
+      <a href="./contact.html">Contact Me</a>
+    </div>
 
     <!-- formulir -->
     <form>
@@ -63,5 +76,6 @@
       </div>
     </form>
     <script src="assets/js/contact.js"></script>
+    <script src="assets/js/nav.js"></script>
   </body>
 </html>

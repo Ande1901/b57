@@ -1,0 +1,140 @@
+.containeru {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.testimonial {
+  width: 25%;
+  margin: 0px 15px 30px 15px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.quote {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-weight: bold;
+  text-align: right;
+}
+
+.profile-testimonial {
+  width: 100%;
+}
+
+.container-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-rating {
+  display: flex;
+}
+
+.rating-btn {
+  margin: 20px;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+.dropdown {
+  display: none;
+}
+.icon {
+  display: none;
+  text-decoration: none;
+  background-color: rgb(203, 202, 202);
+  border-style: none;
+}
+
+#dropdown div a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.rainbow {
+  margin: auto;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  height: 680px;
+  padding: 200px;
+}
+
+.containerr {
+  padding: 20px;
+  width: 50%;
+}
+
+@media only screen and (max-width: 450px) {
+  .collapse {
+    display: none;
+  }
+
+  .rainbow {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .right button {
+    display: none;
+  }
+
+  #dropdown {
+    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(255, 173, 101);
+    text-align: center;
+    box-shadow: 2px 2px 10px;
+    width: 100%;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  #dropdown div {
+    list-style-type: none;
+    border: 1px solid black;
+  }
+
+  .dropdown div a {
+    display: block;
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+    list-style-type: none;
+    border: 1px solid black;
+  }
+
+  .responsive {
+    flex-direction: column;
+  }
+}

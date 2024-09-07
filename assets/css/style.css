@@ -15,13 +15,13 @@
 
 .border {
   border: 1px black solid;
-  width: 300px;
   margin: auto;
   box-shadow: 0px 10px 10px gray;
   border-radius: 20px;
   padding: 50px;
   justify-content: center;
   background-color: white;
+  margin-left: 100px;
 }
 
 nav {
@@ -30,6 +30,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   margin: auto;
+  align-items: center;
 }
 
 .right {
@@ -37,6 +38,8 @@ nav {
   display: flex;
   align-items: center;
   padding-right: 20px;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .left ul {
@@ -88,6 +91,7 @@ nav {
   padding: 100px;
   justify-content: center;
   background-color: white;
+  padding: 100px;
 }
 
 /* form styling */
@@ -133,4 +137,100 @@ form button {
 form button:hover {
   background-color: rgb(223, 140, 24);
   transition: 0.5s;
+}
+
+.cinta {
+  margin: auto;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  height: 680px;
+  padding: 200px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.social-media {
+  margin: 20px;
+}
+
+.containerr {
+  padding: 20px;
+  width: 50%;
+}
+
+.div-baru {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+body {
+  margin: 0;
+}
+
+.icon {
+  display: none;
+  text-decoration: none;
+  background-color: rgb(203, 202, 202);
+  border-style: none;
+  padding-right: 20px;
+}
+
+.hamburger-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-container a {
+  width: 100%;
+  text-align: center;
+  background-color: #ebeaea;
+  color: black;
+  text-decoration: none;
+  padding: 20px 0;
+  border: 1px solid white;
+}
+
+.hamburger-container a:active {
+  background-color: orangered;
+  color: white;
+}
+
+.hamburger-hide {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .cinta {
+    flex-direction: column;
+  }
+  .div-baru {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .containerr {
+    flex-direction: column;
+  }
+
+  .skill {
+    flex-direction: column;
+  }
+
+  .left ul li a {
+    display: none;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
 }

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/Blog.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
     <title>Blog</title>
   </head>
   <body>
@@ -14,13 +15,26 @@
         <ul>
           <img class="logo" src="assets/foto/dwdwd.png" alt="logo-img" />
           <li><a class="collapse" href="index.html">Home</a></li>
-          <li><a class="collapse" href="/Blog">Blog</a></li>
+          <li><a class="collapse" href="./Blog.html">Blog</a></li>
+          <li>
+            <a class="collapse" href="./testimonal.html">Testimonial</a>
+          </li>
         </ul>
       </div>
       <div class="right">
         <button><a class="collapse" href="contact.html">Contact me</a></button>
       </div>
+      <div>
+        <button class="icon" onclick="toggleHamburger()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </nav>
+    <div id="hamburger-container" class="hamburger-container hamburger-hide">
+      <a href="./index.html">Home</a>
+      <a href="./Blog.html" class="hamburger-active">Blog</a>
+      <a href="./contact.html">Contact Me</a>
+    </div>
     <!-- Blog -->
     <!-- Form -->
     <div class="blog">
@@ -76,5 +90,6 @@
         </div>
         <div id="contents"></div>
         <script src="assets/js/Blog.js"></script>
+        <script src="assets/js/nav.js"></script>
   </body>
 </html>

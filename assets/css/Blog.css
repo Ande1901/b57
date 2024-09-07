@@ -308,7 +308,7 @@ nav {
 
 .right button {
   padding: 10px 20px;
-  background-color: blue;
+  background-color: orangered;
   border: none;
   border-radius: 10px;
 }
@@ -429,4 +429,26 @@ body {
   width: 79%;
   text-align: justify;
   margin-left: 100px;
+}
+
+@media screen and (max-width: 640px) {
+  .form-container {
+    padding: 50px;
+  }
+
+  .blog-list-item {
+    flex-direction: column;
+  }
+
+  .left ul li a {
+    display: none;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
 }
