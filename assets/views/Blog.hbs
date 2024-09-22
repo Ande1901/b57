@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/Blog.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <title>Blog</title>
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <ul>
+          <img class="logo" src="/assets/foto/dwdwd.png" alt="logo-img" />
+          <li><a class="collapse" href="/">Home</a></li>
+          <li><a class="collapse" href="/Blog">Blog</a></li>
+          <li>
+            <a class="collapse" href="/testimonal">Testimonial</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <button><a class="collapse" href="/contact">Contact me</a></button>
+      </div>
+      <div>
+        <button class="icon" onclick="toggleHamburger()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="hamburger-container" class="hamburger-container hamburger-hide">
+      <a href="./index.html">Home</a>
+      <a href="./Blog.html" class="hamburger-active">Blog</a>
+      <a href="./contact.html">Contact Me</a>
+    </div>
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+        <div style="display: flex; justify-content:end; padding-right:250px;">
+          <a href="add-blog" class="btn-post" id="btn-group" style="background-color: orangered;">Add New Blog</a></button>
+        </div>
+        {{#each dataBlog}}
+          
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="{{image}}" alt="" />
+          </div>
+          <div class="blog-content">
+             <div class="btn-group">
+                <a class="btn-edit" href="/edit-blog/{{id}}">Edit Post</a>
+                <a class="btn-post" href="/delete-blog/{{id}}">Delete Post</a>
+              </div>
+            <h1>
+              <a href="/Blog-detail/{{id}}" target="_blank"
+                >{{title}}</a
+              >
+            </h1>
+            <div class="detail-blog-content">
+            {{createdAt}} | ande
+            </div>
+            <p>
+            {{content}}
+            </p>
+            {{!-- ${dataBlog[i].swift}
+            ${dataBlog[i].ruby}
+            ${dataBlog[i].phyton}
+            ${dataBlog[i].javascript} --}}
+            <i class="fa-regular fa-gem"></i>
+            <i class="fa-brands fa-swift"></i>
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-js"></i> 
+
+            <p style="float: right">{{updateAt}}</p>
+          </div>
+        </div>
+        {{/each}}
+        <div id="contents"></div>
+        
+        <script src="assets/js/nav.js"></script>
+  </body>
+</html>

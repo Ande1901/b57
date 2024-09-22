@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/testimonal.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Testimonials</title>
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <ul>
+          <img class="logo" src="assets/foto/dwdwd.png" alt="logo-img" />
+          <li><a class="collapse" href="/">Home</a></li>
+          <li><a class="collapse" href="/Blog">Blog</a></li>
+          <li>
+            <a class="collapse" href="/testimonal">Testimonial</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <button><a class="collapse" href="/contact">Contact me</a></button>
+      </div>
+      <div>
+        <button class="icon" onclick="toggleHamburger()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="containeru">
+      <h1>My Testimonials</h1>
+      <div class="container-rating">
+        <h2>Rating By Star</h2>
+        <div class="rating">
+          <button onclick="allTestimonial()" class="rating-btn">All</button>
+          <button onclick="filterTestimonial(1)" class="rating-btn">
+            1
+            <i class="fa-solid fa-star"></i>
+          </button>
+          <button onclick="filterTestimonial(2)" class="rating-btn">
+            2
+            <i class="fa-solid fa-star"></i>
+          </button>
+          <button onclick="filterTestimonial(3)" class="rating-btn">
+            3
+            <i class="fa-solid fa-star"></i>
+          </button>
+          <button onclick="filterTestimonial(4)" class="rating-btn">
+            4
+            <i class="fa-solid fa-star"></i>
+          </button>
+          <button onclick="filterTestimonial(5)" class="rating-btn">
+            5
+            <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+      </div>
+
+      <section class="testimonials" id="testimonials"></section>
+    </div>
+    <script src="./assets/js/testimonials.js"></script>
+  </body>
+</html>

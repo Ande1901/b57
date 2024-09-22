@@ -49,6 +49,10 @@ nav ul li .active {
 }
 
 /* Blog Form */
+.blog {
+  padding: 100px;
+}
+
 .blog-form {
   padding: 50px 0;
   display: flex;
@@ -135,7 +139,7 @@ select {
 
 /* Blog list */
 .blog .blog-list {
-  margin-top: 80px;
+  margin-top: 100px;
   margin-bottom: 80px;
   display: flex;
   align-items: center;
@@ -178,12 +182,29 @@ select {
   background: #dbdbdb;
 }
 
+#btn-group:hover {
+  background-color: rgb(241, 107, 59);
+}
+
+#btn-group {
+  border: 0;
+  border-radius: 4px;
+  background: #ec4d37;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-post:hover {
+  background-color: yellow;
+}
+
 .btn-group .btn-post {
   padding: 5px 10px;
   border: 0;
   border-radius: 4px;
   background: #ec4d37;
   color: #fff;
+  cursor: pointer;
 }
 
 .blog .blog-list h1 a {
@@ -277,9 +298,6 @@ nav {
   background-color: rgb(203, 202, 202);
   display: flex;
   justify-content: space-between;
-}
-
-.left {
 }
 
 .right {

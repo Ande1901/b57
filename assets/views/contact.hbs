@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body style="background-image: url('/foto/aduhh.jpg')">
+    <nav>
+      <div class="left">
+        <ul>
+          <img class="logo" src="assets/foto/dwdwd.png" alt="logo-img" />
+          <li><a class="collapse" href="/">Home</a></li>
+          <li><a class="collapse" href="/Blog">Blog</a></li>
+          <li>
+            <a class="collapse" href="/testimonal">Testimonial</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <button><a class="collapse" href="/contact">Contact me</a></button>
+      </div>
+      <div>
+        <button class="icon" onclick="toggleHamburger()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="hamburger-container" class="hamburger-container hamburger-hide">
+      <a href="/">Home</a>
+      <a href="/Blog" class="hamburger-active">Blog</a>
+      <a href="/contact">Contact Me</a>
+    </div>
+
+    <!-- formulir -->
+    <form>
+      <div class="kotak">
+        <h1 style="text-align: center">Get in touch</h1>
+        <div>
+          <label for="Nameinput">Name</label>
+          <input
+            id="Nameinput"
+            type="text"
+            required
+            placeholder="input your name"
+          />
+        </div>
+
+        <div>
+          <label for="emailinput">email</label>
+          <input id="emailinput" type="email" placeholder="abcd@gmail.com" />
+        </div>
+
+        <div>
+          <label for="numberinput">Phone</label>
+          <input id="numberinput" type="tel" placeholder="081234567890" />
+        </div>
+
+        <div>
+          <label for="position">Position</label>
+          <select id="position">
+            <option hidden>Select option!</option>
+            <option>Fronten developer</option>
+            <option>Backend developers</option>
+            <option>fullstack developer</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="address">addres</label>
+          <textarea id="address"></textarea>
+        </div>
+
+        <button type="button" onclick="getdata()">submit</button>
+      </div>
+    </form>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/nav.js"></script>
+  </body>
+</html>

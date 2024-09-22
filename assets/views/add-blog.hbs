@@ -14,15 +14,15 @@
       <div class="left">
         <ul>
           <img class="logo" src="assets/foto/dwdwd.png" alt="logo-img" />
-          <li><a class="collapse" href="index.html">Home</a></li>
-          <li><a class="collapse" href="./Blog.html">Blog</a></li>
+          <li><a class="collapse" href="/">Home</a></li>
+          <li><a class="collapse" href="/Blog">Blog</a></li>
           <li>
-            <a class="collapse" href="./testimonal.html">Testimonial</a>
+            <a class="collapse" href="/testimonal">Testimonial</a>
           </li>
         </ul>
       </div>
       <div class="right">
-        <button><a class="collapse" href="contact.html">Contact me</a></button>
+        <button><a class="collapse" href="/contact">Contact me</a></button>
       </div>
       <div>
         <button class="icon" onclick="toggleHamburger()">
@@ -40,15 +40,15 @@
     <div class="blog">
         <div class="blog-form">
           <div class="form-container">
-            <form onsubmit="addBlog(event)">
+            <form action="/add-blog" enctype="multipart/form-data" method="post">
               <h1>Create Post Blog</h1>
               <div>
-                <label for="input-blog-title">Title</label>
-                <input id="input-blog-title" />
+                <label for="title">Title</label>
+                <input name="title" />
               </div>
               <div>
-                <label for="input-blog-content">Content</label>
-                <textarea id="input-blog-content"></textarea>
+                <label for="content">Content</label>
+                <textarea name="content"></textarea>
               </div>
   
               <div>
@@ -56,18 +56,18 @@
                 <div class="checkbox">
                   <div class="checkcheck">
                     <label for="swift" style="display: flex;"
-                      ><input type="checkbox" id="swift" />Swift</label
+                      ><input type="checkbox" name="swift" />Swift</label
                     >
                     <label for="ruby" style="display: flex;"
-                      ><input type="checkbox" id="ruby" />Ruby</label
+                      ><input type="checkbox" name="ruby" />Ruby</label
                     >
                   </div>
                   <div class="flex-box">
                     <label for="phyton" style="display: flex;"
-                      ><input type="checkbox" id="phyton" />Phyton</label
+                      ><input type="checkbox" name="phyton" />Phyton</label
                     >
                     <label for="javascript" style="display: flex;"
-                      ><input type="checkbox" id="javascript" />Javascript</label
+                      ><input type="checkbox" name="javascript" />Javascript</label
                     >
                   </div>
                 </div>
@@ -79,7 +79,7 @@
                     <p>Attach File</p>
                     <i class="fa-solid fa-paperclip"></i>
                   </label>
-                  <input type="file" id="input-blog-image" hidden />
+                  <input type="file" id="input-blog-image" name="image" hidden />
                 </div>
               </div>
               <div class="button-group">
@@ -87,9 +87,7 @@
               </div>
             </form>
           </div>
-        </div>
-        <div id="contents"></div>
-        <script src="assets/js/Blog.js"></script>
+        </div>              
         <script src="assets/js/nav.js"></script>
   </body>
 </html>
