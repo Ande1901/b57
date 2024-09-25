@@ -1,0 +1,114 @@
+/* Basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e2f;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+
+/* Header styles */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: #343447;
+}
+
+.auth-buttons button {
+  background-color: #b5a300;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.auth-buttons button:hover {
+  opacity: 0.9;
+}
+
+/* Main content styles */
+.div-ft {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.collections-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.collection-card {
+  background-color: #29293a;
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.collection-card h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.collection-card p {
+  font-size: 0.9rem;
+  color: #b5a300;
+}
+
+.collection-card .icon {
+  font-size: 2.5rem;
+}
+
+.status-clock,
+.status-check {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.status-clock {
+  background-color: purple;
+  border-radius: 50%;
+}
+
+.status-check {
+  background-color: green;
+  border-radius: 50%;
+}
+
+.completed .status-check {
+  background-color: green;
+}
+
+.add-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #b5a300;
+  cursor: pointer;
+}

@@ -57,17 +57,22 @@ async function editBlogView(req, res) {
 }
 
 async function editBlog(req, res) {
-  try {
-    const { id } = req.params;
-    const { title, content } = req.body;
+  const { id } = req.params;
+  const { title, content } = req.body;
 
-    const query = `UPDATE public.blogs SET title='${title}', content='${content}' WHERE id=${id}`;
-    await sequelize.query(query, { type: QueryTypes.UPDATE });
+  const Blog = await blogModel.findOne({
+    where: {
+      id: id,
+    },
+  });
 
-    res.redirect("/Blog");
-  } catch (error) {
-    console.log(error);
-  }
+  if (!Blog) return res.render("not-found");
+
+  Blog.title = title;
+  Blog.content = content;
+
+  await Blog.save();
+  res.redirect("/Blog");
 }
 
 function addBlogView(req, res) {

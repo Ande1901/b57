@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bgc {
+  background-color: #1e1e2f;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+
+/* Body */
+
+i,
+h1,
+p,
+a {
+  color: black !important;
+}
+
+.card {
+  background: white;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(117, 116, 116);
+  box-shadow: 1px 1px 10px rgb(153, 153, 153);
+}
+
+h1 {
+  color: white !important;
+}
+
+.card i {
+  font-size: 100px;
+}
+
+.card-title a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.gapp {
+  gap: 10px;
+}
+
+.gapp i {
+  font-size: 50px;
+}
+
+.add {
+  margin: 89px;
+  text-decoration: none;
+  color: black;
+}

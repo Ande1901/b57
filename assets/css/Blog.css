@@ -344,7 +344,6 @@ nav {
 }
 .logo:hover {
   width: 70px;
-  transition: 0.5s;
 }
 
 body {
@@ -360,7 +359,6 @@ body {
 .title {
   margin-top: 50px;
   text-align: center;
-  text-transform: uppercase;
   font-weight: 1000;
   font-size: 45px;
 }
